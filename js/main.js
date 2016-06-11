@@ -2,7 +2,7 @@ var zombies = {
     'div1': '<div id=zerohero></div>',
     'div2': '<div id=zoombah></div>'
 };
-    
+
 $('#zombies').append(zombies.div1, zombies.div2);
 
 var zombie1 = {
@@ -48,7 +48,14 @@ var zombie2 = {
 
 };
 
+function coolKitty() {
+  if (zombie2.increment) {
+    $('#container').alert();
 
+  }
+}
+
+coolKitty;
 
 zombie1.display();
 zombie1.click(zombie1.increment);
